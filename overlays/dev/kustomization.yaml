@@ -6,7 +6,7 @@ images:
   newTag: abcdefg
 - name: 153278745791.dkr.ecr.ap-northeast-2.amazonaws.com/test-mphong-demo-frontend
   newName: 153278745791.dkr.ecr.ap-northeast-2.amazonaws.com/test-mphong-demo-frontend
-  newTag: a8ddef37
+  newTag: "59362534"
 resources:
 - ../../base
 patchesStrategicMerge:
