@@ -31,8 +31,8 @@ jobs:
 
       - name: Install ArgoCD and execute Sync in ArgoCD
         run: |
-          sudo curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
-          sudo chmod +x /usr/local/bin/argocd
+          curl -o /usr/local/bin/argocd http://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+          chmod +x /usr/local/bin/argocd
           ARGO_SERVER=af7224dcc4f3d4ad7a72e1c0dd5ae9a0-1127001466.ap-northeast-2.elb.amazonaws.com
           argocd app sync eksworkshop-cd-pipeline --auth-token ${{ secrets.ARGOCD_TOKEN }} --server  --insecure
 
